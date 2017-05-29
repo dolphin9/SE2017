@@ -1,6 +1,6 @@
 <template>
 	<md-card id="signin-card">
-	<form id="signin-form" novalidate @submit.stop.prevent="">
+	<form id="signin-form" novalidate method="post" action="http://localhost:8081/src/register.php">
 		<span id="headline" class="md-headline">登陆</span>
 		<md-input-container>
 			<label>用户名</label>
@@ -13,7 +13,7 @@
 		<router-link to="/SignUp">
 			<md-button id="signup-button" class="md-raised md-primary">注册</md-button>
 		</router-link>
-		<md-button id="signin-button" class="md-raised md-primary">登陆</md-button>
+		<md-button id="signin-button" class="md-raised md-primary" type="submit">登陆</md-button>
 	</form>
 </md-card>
 </template>
